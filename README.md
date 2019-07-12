@@ -1,6 +1,9 @@
 # Mysql Loops
   If you want to put while loop inside the MySQL then Follow the Procedure.
 
+BEFORE start you need to set Delimiter
+default its ' : ' you need to change it ' $$ '
+
 * SETP-ONE 
   
   MySQL stored procedure using CREATE PROCEDURE statement.
