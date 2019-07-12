@@ -1,0 +1,19 @@
+#put the code directly in the MySQL
+
+#First we are checking is there already any PROCEDURE in MySQL with the same name, it's there when we are deleting that
+    DROP PROCEDURE IF EXISTS insert_ten_rows $$
+
+#Here we are Adding the new PROCEDURE
+    CREATE PROCEDURE insert_ell_rows ()
+
+#main code start
+    BEGIN
+    DECLARE crs INT DEFAULT 0;
+    WHILE crs < 11 DO
+    SET crs = crs + 1;
+    INSERT INTO `inventory`(`variation_id`, `quantity`) VALUES (1,1);
+    END WHILE;
+#ends of code
+
+    END $$
+#ends of PROCEDURE
